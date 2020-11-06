@@ -8,7 +8,7 @@
 
 import pyautogui
 
-print('Screen', pyautogui.size())
+print('Screen', pyautogui.size()) #displays your screen resolution
 pyautogui.click(1,1)
 pyautogui.click(220, 120, duration = 1)
 pyautogui.click(220, 280, duration = 1)
