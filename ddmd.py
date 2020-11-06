@@ -8,13 +8,12 @@ print('Screen', pyautogui.size())   #print users screen resolution
 while True:
     iterations = input('Number of messages to delete [default is 50]: ')
     if len(iterations) < 1:
-        iterations = '50'
+        iterations = 50
     try:
-        match = re.search(r'[\d]+', iterations)   #checks user input for an integer
-    except:
+        iterations = int(iterations)
+    except ValueError:
         print('Error:', iterations, 'is not a number')
         continue
-    iterations = int(iterations)
     break
 
 #check user input for valid message edit mode setting
