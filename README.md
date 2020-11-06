@@ -8,6 +8,7 @@ You will need to install the PyAutoGUI library, which can be found here: https:/
 Operation:
 Run sctest.py to dial in the exact screen coordinates needed to make ddmd.py work properly for your screen size and resolution.
 Once working coordinates are found, edit them into your ddmd.py file. Open the Discord desktop application and set the window to full screen, or at least make the window stretch top to bottom on your screen and move it all the way to the left. Make sure that the upper left-hand corner is visible while other applications are open, and make sure that the private conversation you want to delete messages from is at the top of the conversations list (i.e your most recent DM). Select that conversation and scroll to where your most recent message starts if it is currently off screen, otherwise leave it where it is. Now run ddmd. 
+
 Note: It is reccomended that all conversations are muted for the duration of the deletion process so that the conversation order does not change.
 
 You will see the screen flash back and forth between the conversation and the Friends tab (this is normal). The tabs are switched back and forth because Discord wont accept the "up arrow" selection hotkey more than once without leaving the current conversation and returning. The Friends tab was chosen because it is always present and less visually disruptive than other choices when switching back and forth between it and the conversation.
