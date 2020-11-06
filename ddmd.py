@@ -10,7 +10,7 @@ while True:
     if len(iterations) < 1:
         iterations = 50
     try:
-        iterations = int(iterations)
+        iterations = int(iterations)    #checks if iterations is an integer
     except ValueError:
         print('Error:', iterations, 'is not a number')
         continue
