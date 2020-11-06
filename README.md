@@ -1,5 +1,5 @@
-# ddmd
-ddmd (discord dm deleter) is a Python program for mass deleting Discord DM history.
+# ddmd (discord dm deleter)
+ddmd is a Python program for mass deleting Discord DM history.
 
 It creates a macro for deleting private messages on discord and runs it a user determined number of times. It has a user enabled option for overwriting messages with the character "x" prior to deletion. 
 
