@@ -54,11 +54,11 @@ while mainCount < iterations:
         if editMode in ('y', 'yes', 'Yes'):
             if gateStatus == True:
                 pyautogui.typewrite(['backspace', 'x', 'enter'])
-                gateStatus ^= t   #toggles logic gate so the next time around it will delete the message rather than overwrite it
+                gateStatus ^= t   #toggles logic gate so next time around it will delete the message rather than overwrite it
                 time.sleep(1)
                 continue
             else:
-                gateStatus ^= t   #toggles logic gate so the next time around it will overwrite the message rather than delete it
+                gateStatus ^= t   #toggles logic gate so next time around it will overwrite the message rather than delete it
 
         pyautogui.typewrite(['backspace', 'enter'])
         pyautogui.typewrite(['enter'])
