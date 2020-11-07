@@ -6,7 +6,7 @@ from tqdm import tqdm   #progress bar library
 while True:
     iterations = input('Number of messages to delete: ')
     if len(iterations) < 1:
-        iterations = '100'
+        iterations = 100
     try:
         iterations = int(iterations)    #checks user input for an integer
     except:
