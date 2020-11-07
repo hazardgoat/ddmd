@@ -1,13 +1,13 @@
 # ddmd (discord dm deleter)
 ddmd is a Python program for mass deleting Discord DM history.
 
-It creates a macro and runs it a user determined number of times. It has a user enabled option for overwriting messages with the character "x" prior to deletion. 
+It creates a macro and runs it a user determined number of times. It has a user enabled mode for overwriting messages with the character "x" prior to deletion, as well as a user enabled mode for entering custom screen coordinates.
 
 You will need to install the PyAutoGUI library, which can be found here: https://pyautogui.readthedocs.io/en/latest/install.html
 
 Operation:
 Run sctest.py to dial in the exact screen coordinates needed to make ddmd.py work properly for your screen size and resolution.
-Once working coordinates are found, edit them into your ddmd.py file. Open the Discord desktop application and set the window to full screen, or at least make the window stretch top to bottom on your screen and move it all the way to the left. Make sure that the upper left-hand corner is visible while other applications are open, and make sure that the private conversation you want to delete messages from is at the top of the conversations list (i.e your most recent DM). Select that conversation and scroll to where your most recent message starts if it is currently off screen, otherwise leave it where it is. Now run ddmd. 
+Use these coordinates for the custom coordinates prompt, or edit them into your ddmd.py file to make them the default. Open the Discord desktop application and set the window to full screen, or at least make the window stretch top to bottom on your screen and move it all the way to the left. Make sure that the upper left-hand corner is visible while other applications are open, and make sure that the private conversation you want to delete messages from is at the top of the conversations list (i.e your most recent DM). Select that conversation and scroll to where your most recent message starts if it is currently off screen, otherwise leave it where it is. Now run ddmd.
 
 Note: It is reccomended that all conversations are muted for the duration of the deletion process so that the conversation order does not change.
 
