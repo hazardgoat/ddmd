@@ -35,11 +35,11 @@ while True:
     ccMode = input('Custom screen coordinates? y/n [default is n]: ')
     if len(ccMode) < 1:
         ccMode = 'n'
-        xa = 220    #Friends tab x coordinate
-        ya = 120    #Friends taby coordinate
-        xb = 220    #conversation tab x coordinate
-        yb = 280    #conversation tab y coordinate
-        print('Deafult coordinates are', (xa, xb),'and', (xb, yb))
+        xa = 220    #Friends tab x default coordinate
+        ya = 120    #Friends tab y default coordinate
+        xb = 220    #conversation tab x default coordinate
+        yb = 280    #conversation tab y default coordinate
+        print('Default coordinates are', (xa, xb),'and', (xb, yb))
     elif ccMode not in ('y', 'yes', 'Yes', 'n', 'no', 'No'):
         print('Invalid input: Please enter y or n')
         continue
