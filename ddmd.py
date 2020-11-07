@@ -35,6 +35,7 @@ while True:
     ccMode = input('Custom screen coordinates? y/n [default is n]: ')
     if len(ccMode) < 1:
         ccMode = 'n'
+        print('Deafult coordinates are (220, 120) and (220, 280)')
         xa = 220    #Friends tab x coordinate
         ya = 120    #Friends taby coordinate
         xb = 220    #conversation tab x coordinate
