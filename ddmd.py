@@ -19,6 +19,7 @@ while True:
     editMode = input('Edit mode? y/n [default is n]: ')
     if len(editMode) < 1:
         editMode = 'n'
+        print('editMode off')
     elif editMode not in ('y', 'yes', 'Yes', 'n', 'no', 'No'):
         print('Invalid input: Please enter y or n')
         continue
@@ -34,13 +35,14 @@ ya = 120    #Friends tab y default coordinate
 xb = 220    #conversation tab x default coordinate
 yb = 280    #conversation tab y default coordinate
 print('Screen', pyautogui.size())   #print users screen resolution
-print('Default screen coordinates are', (xa, xb),'and', (xb, yb))
+print('Default screen coordinates', (xa, xb),'and', (xb, yb))
 
 #checks user input for valid custom coordinate mode setting
 while True:
     ccMode = input('Custom screen coordinates? y/n [default is n]: ')
     if len(ccMode) < 1:
         ccMode = 'n'
+        print('ccMode off')
     elif ccMode not in ('y', 'yes', 'Yes', 'n', 'no', 'No'):
         print('Invalid input: Please enter y or n')
         continue
@@ -92,9 +94,7 @@ subCount = 0
 pyautogui.click(1, 1)   #moves mouse to upper left hand corner and selects app
 
 #message deletion loop
-for i in tqdm (range (iterations),  #sets up the progress bar
-                desc="Deleting",
-                ascii=False, ncols=75):
+for i in tqdm (range (iterations), desc="Deleting", ascii=False):
     pyautogui.click(xa, ya)   #moves mouse to Friends tab and clicks right
     pyautogui.click(xb, yb)   #moves mouse to conversation tab and clicks right
 
