@@ -39,7 +39,7 @@ while True:
         ya = 120    #Friends tab y default coordinate
         xb = 220    #conversation tab x default coordinate
         yb = 280    #conversation tab y default coordinate
-        print('Default coordinates are', (xa, xb),'and', (xb, yb))
+        print('Default screen coordinates are', (xa, xb),'and', (xb, yb))
     elif ccMode not in ('y', 'yes', 'Yes', 'n', 'no', 'No'):
         print('Invalid input: Please enter y or n')
         continue
