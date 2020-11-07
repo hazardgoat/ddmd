@@ -2,8 +2,6 @@ import pyautogui    #macro control library
 import time
 from tqdm import tqdm   #progress bar library
 
-print('Screen', pyautogui.size())   #print users screen resolution
-
 #check user input for valid message deletion quota
 while True:
     iterations = input('Number of messages to delete [default is 50]: ')
@@ -30,16 +28,19 @@ while True:
         modeCorrect = 0
     break
 
+#default screen coordinates
+xa = 220    #Friends tab x default coordinate
+ya = 120    #Friends tab y default coordinate
+xb = 220    #conversation tab x default coordinate
+yb = 280    #conversation tab y default coordinate
+print('Screen', pyautogui.size())   #print users screen resolution
+print('Default screen coordinates are', (xa, xb),'and', (xb, yb))
+
 #checks user input for valid custom coordinate mode setting
 while True:
     ccMode = input('Custom screen coordinates? y/n [default is n]: ')
     if len(ccMode) < 1:
         ccMode = 'n'
-        xa = 220    #Friends tab x default coordinate
-        ya = 120    #Friends tab y default coordinate
-        xb = 220    #conversation tab x default coordinate
-        yb = 280    #conversation tab y default coordinate
-        print('Default screen coordinates are', (xa, xb),'and', (xb, yb))
     elif ccMode not in ('y', 'yes', 'Yes', 'n', 'no', 'No'):
         print('Invalid input: Please enter y or n')
         continue
