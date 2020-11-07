@@ -4,9 +4,9 @@ from tqdm import tqdm   #progress bar library
 
 #check user input for valid message deletion quota
 while True:
-    iterations = input('Number of messages to delete [default is 50]: ')
+    iterations = input('Number of messages to delete: ')
     if len(iterations) < 1:
-        iterations = '50'
+        iterations = '100'
     try:
         iterations = int(iterations)    #checks user input for an integer
     except:
@@ -16,7 +16,7 @@ while True:
 
 #check user input for valid message edit mode setting
 while True:
-    editMode = input('Edit mode? y/n [default is n]: ')
+    editMode = input('Edit mode? y/n: ')
     if len(editMode) < 1:
         editMode = 'n'
         print('editMode off')
@@ -39,7 +39,7 @@ print('Default screen coordinates', (xa, xb),'and', (xb, yb))
 
 #checks user input for valid custom coordinate mode setting
 while True:
-    ccMode = input('Custom screen coordinates? y/n [default is n]: ')
+    ccMode = input('Custom screen coordinates? y/n: ')
     if len(ccMode) < 1:
         ccMode = 'n'
         print('ccMode off')
