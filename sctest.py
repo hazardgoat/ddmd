@@ -4,7 +4,7 @@
 #stretching top to bottom of your screen and moved all the way to the left. Make sure that
 #the upper left corner of the Discord application window is visible while other programs are
 #running. Take note of where the mouse cursor moves and edit the coordinates in this code as 
-#nessisary until the mouse cursor moves to the #Friends list tab and then the target conversation. 
+#nessisary until the mouse cursor moves to the Friends list tab and then the target conversation. 
 #Once you have the correct coordinates, use them when prompted by ddmd.py. If you'd like them to 
 #be the default, edit them into ddmd.py
 
