@@ -90,7 +90,7 @@ gateClosed = False
 t = gateOpen ^ gateClosed
 gateStatus = gateOpen
 
-subCount = 0
+count = 0
 pyautogui.click(1, 1)   #moves mouse to upper left hand corner and selects app
 
 #message deletion loop
@@ -98,8 +98,8 @@ for i in tqdm (range (iterations), desc="Deleting", ascii=False):
     pyautogui.click(xa, ya)   #moves mouse to Friends tab and clicks right
     pyautogui.click(xb, yb)   #moves mouse to conversation tab and clicks right
 
-    while subCount < (2 - modeCorrect):
-        subCount += 1
+    while count < (2 - modeCorrect):
+        count += 1
         pyautogui.typewrite(['up'])    #up arrow key
         pyautogui.hotkey('ctrlleft', 'a')   #left ctrl+a key combination
         time.sleep(1)   #sleep used to prevent execution of commands faster than discord will accept them
@@ -117,6 +117,6 @@ for i in tqdm (range (iterations), desc="Deleting", ascii=False):
         pyautogui.typewrite(['enter'])     #enter key (seperate commant because it executes too fast for discord)
         time.sleep(1)
 
-    subCount = 0
+    count = 0
 
 print('Finished:', iterations, 'messages deleted')
