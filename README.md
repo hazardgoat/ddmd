@@ -12,5 +12,5 @@ Use these coordinates for the custom coordinates prompt, or edit them into your 
 You will see the screen flash back and forth between the conversation and the Friends tab (this is normal). The tabs are switched back and forth because Discord wont accept the "up arrow" selection hotkey more than once without leaving the current conversation and returning. The Friends tab was chosen because it is always present and less visually disruptive than other choices when switching back and forth between it and the conversation.
 
 Troubleshooting:
-1) If any messages you during the deletion process, that conversation will move up the conversation list as it is the most recent. You will need to reinitialize the program and either reconfigure the coordinates or make the desired conversation the most recent.
+1) If anyone messages you during the deletion process, that conversation will move to the top of the conversation list as it is the most recent. You will need to reinitialize the program and either reconfigure the coordinates or make the desired conversation the most recent.
 2) An error that occasionally causes the program to misfunction is if it isn't able to start with your most recent message in the conversation visible on screen. To correct this if it occurs, scroll up to your most recent message in the conversation and reinitialize the program.
