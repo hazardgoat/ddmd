@@ -5,8 +5,8 @@
 #the upper left corner of the Discord application window is visible while other programs are
 #running. Take note of where the mouse cursor moves and edit the coordinates in this code as 
 #nessisary until the mouse cursor moves to the Friends list tab and then the target conversation. 
-#Once you have the correct coordinates, use them when prompted by ddmd.py. If you'd like them to 
-#be the default, edit them into ddmd.py
+#Once you have the correct coordinates, run ddmd.py and use them when prompted. If you'd like 
+#them to be the default, edit them into ddmd.py
 
 #You will need to install the pyautogui library, which can be found here: 
 #https://pyautogui.readthedocs.io/en/latest/install.html
