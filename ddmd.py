@@ -19,14 +19,15 @@ while True:
     editMode = input('Edit mode? y/n: ')
     if len(editMode) < 1:
         editMode = 'n'
-        print('editMode off')
     elif editMode not in ('y', 'yes', 'Yes', 'n', 'no', 'No'):
         print('Invalid input: Please enter y or n')
         continue
     if editMode not in ('y', 'yes', 'Yes'):
         modeCorrect = 1
+        print('editMode off')
     else:
         modeCorrect = 0
+        print('editMode on')
     break
 
 #default screen coordinates
@@ -42,13 +43,14 @@ while True:
     ccMode = input('Custom screen coordinates? y/n: ')
     if len(ccMode) < 1:
         ccMode = 'n'
-        print('ccMode off')
     elif ccMode not in ('y', 'yes', 'Yes', 'n', 'no', 'No'):
         print('Invalid input: Please enter y or n')
         continue
     elif ccMode in ('n', 'no', 'No'):
+        print('ccMode off')
         break
     else:
+        print('ccMode on')
         while True:    #starts loops asking for user to input screen coordinates
             xa = input('Friends tab X coordinate: ')
             try:
