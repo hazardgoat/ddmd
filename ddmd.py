@@ -112,29 +112,35 @@ while True:
         exit()
     break
 
-for i in tqdm (range (iterations), desc="Deleting", ascii=False):
-    pyautogui.click(xa, ya)   #moves mouse to Friends tab and clicks right
-    pyautogui.click(xb, yb)   #moves mouse to conversation tab and clicks right
+try:
+    print('To exit program, select the command prompt window and press Ctrl-C.')
+    for i in tqdm (range (iterations), desc="Deleting", ascii=False):
+        pyautogui.click(xa, ya)   #moves mouse to Friends tab and clicks right
+        pyautogui.click(xb, yb)   #moves mouse to conversation tab and clicks right
 
-    while count < (2 - modeCorrect):
-        count += 1
-        pyautogui.typewrite(['up'])    #up arrow key
-        pyautogui.hotkey('ctrlleft', 'a')   #left ctrl+a key combination
-        time.sleep(1)   #sleep used to prevent execution of commands faster than discord will accept them
+        while count < (2 - modeCorrect):
+            count += 1
+            pyautogui.typewrite(['up'])    #up arrow key
+            pyautogui.hotkey('ctrlleft', 'a')   #left ctrl+a key combination
+            time.sleep(1)   #sleep used to prevent execution of commands faster than discord will accept them
 
-        if editMode in ('y', 'yes', 'Yes'):
-            if gateStatus == True:
-                pyautogui.typewrite(['backspace', 'x', 'enter'])    #backspace key then x key then enter key
-                gateStatus ^= t    #toggles the logic gate
-                time.sleep(1)
-                continue
-            else:
-                gateStatus ^= t
+            if editMode in ('y', 'yes', 'Yes'):
+                if gateStatus == True:
+                    pyautogui.typewrite(['backspace', 'x', 'enter'])    #backspace key then x key then enter key
+                    gateStatus ^= t    #toggles the logic gate
+                    time.sleep(1)
+                    continue
+                else:
+                    gateStatus ^= t
 
-        pyautogui.typewrite(['backspace', 'enter'])    #backspace key then enter key
-        pyautogui.typewrite(['enter'])     #enter key (seperate commant because it executes too fast for discord)
-        time.sleep(1)
+            pyautogui.typewrite(['backspace', 'enter'])    #backspace key then enter key
+            pyautogui.typewrite(['enter'])     #enter key (seperate commant because it executes too fast for discord)
+            time.sleep(1)
 
-    count = 0
+        count = 0
 
-print('Finished:', iterations, 'messages deleted')
+    print('Finished:', iterations, 'messages deleted')
+except KeyboardInterrupt:
+    print('Exiting')
+    exit()
+    
