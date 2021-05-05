@@ -6,7 +6,7 @@ It creates a macro and runs it a User determined number of times. It has a User 
 Users will need to install the PyAutoGUI library, which can be found here: https://pyautogui.readthedocs.io/en/latest/install.html
 
 Operation:
-Open ddmd.py in the command line and follow the on-screen instructions. 
+1) Open ddmd.py in the command line and follow the on-screen instructions. 
 
 Notes:
 1) During custom coordinate calibration, the User is asked to move their mouse to specific locations of the Discord application. This is because Discord deselects conversations after each hotkey deletion, so it is nessisary to reselect the conversation again. In order to ensure no selection mistakes and to keep things visually less destracting, during custom coordinates calibration the program prompts the User to set the "Friends" tab as the selection reset point. In practice, this can be anywhere in Discord so long as it isn't the traget conversation.
