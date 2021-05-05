@@ -113,7 +113,7 @@ while True:
     break
 
 try:
-    print('To exit program, select the command prompt window and press Ctrl-C.')
+    print('To exit program, select the command line window and press Ctrl-C.')
     for i in tqdm (range (iterations), desc="Deleting", ascii=False):
         pyautogui.click(xa, ya)   #moves mouse to Friends tab and clicks right
         pyautogui.click(xb, yb)   #moves mouse to conversation tab and clicks right
