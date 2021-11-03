@@ -1,5 +1,5 @@
 # ddmd (discord dm deleter)
-ddmd.py is a Python program for mass deleting Discord DM history.
+ddmd.py is a Python script macro for mass deleting Discord DM history.
 
 It creates a macro and runs it a User determined number of times. It has a User enabled mode for overwriting messages with the character "x" prior to deletion, as well as a User enabled mode for entering custom screen coordinates.
 
